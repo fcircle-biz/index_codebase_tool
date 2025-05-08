@@ -17,7 +17,24 @@ def main():
     args = parser.parse_args()
 
     SOURCE_DIR = args.source
-    TARGET_EXTENSIONS = [".py", ".js", ".ts", ".java", ".cs", ".go", ".md", ".html"]
+    TARGET_EXTENSIONS = [
+        # Java / Spring Boot
+        ".java", ".kt",
+        ".properties", ".yml", ".yaml",
+        ".jsp",  # JSPテンプレート
+
+        # Python
+        ".py",
+
+        # JavaScript / React / TypeScript
+        ".js", ".jsx", ".ts", ".tsx",
+
+        # SQL / データ
+        ".sql", ".csv", ".txt",
+
+        # ドキュメント / 設定
+        ".md", ".html", ".json", ".xml"
+    ]
     HASH_RECORD_FILE = "file_hashes.json"
     COLLECTION_NAME = "code_collection"
 
