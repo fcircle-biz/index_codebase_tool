@@ -21,7 +21,7 @@ def main():
         # Java / Spring Boot
         ".java", ".kt",
         ".properties", ".yml", ".yaml",
-        ".jsp",  # JSPテンプレート
+        ".jsp",
 
         # Python
         ".py",
@@ -29,11 +29,17 @@ def main():
         # JavaScript / React / TypeScript
         ".js", ".jsx", ".ts", ".tsx",
 
+        # スタイル関連
+        ".css", ".scss", ".sass",
+
         # SQL / データ
-        ".sql", ".csv", ".txt",
+        ".sql", ".csv", ".tsv", ".txt",
 
         # ドキュメント / 設定
-        ".md", ".html", ".json", ".xml"
+        ".md", ".html", ".json", ".xml", ".conf",
+
+        # その他（環境・スクリプト）
+        ".env", ".sh", ".bat"
     ]
     HASH_RECORD_FILE = "file_hashes.json"
     COLLECTION_NAME = "code_collection"
