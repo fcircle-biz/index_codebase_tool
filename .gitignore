@@ -1,0 +1,15 @@
+# Python ビルド／パッケージ関連
+*.egg-info/
+dist/
+build/
+__pycache__/
+*.pyc
+
+# 仮想環境
+venv/
+
+# Qdrant 永続ストレージ
+qdrant_storage/
+
+# その他
+file_hashes.json

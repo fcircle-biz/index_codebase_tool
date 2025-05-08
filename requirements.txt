@@ -1,0 +1,4 @@
+qdrant-client
+langchain
+sentence-transformers
+tqdm
